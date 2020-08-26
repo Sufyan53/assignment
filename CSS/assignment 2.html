@@ -6,46 +6,92 @@
 		*
 		{
 			margin: 0px;
-			font-size: 18px;
-			font-weight: bold;
+			padding: 0px;
+			text-decoration: none;
+			color: black;
 		}
-		ul
+		#navbar
 		{
 			height: 50px;
-			background-color: black;
+			background: black;
+		}
+		#home
+		{
+			background: blue;
+		}
+		#home:hover
+		{
+			background: #5257EB;
+		}
+		#home:active
+		{
+			background: #5257EB;
+			height: 42px;
+			border: 4px groove blue;
+		}
+		li
+		{
+			height: 50px;
+			width: 150px;
+			float: left;
+			line-height: 50px;
+			text-align: center;
+			font-family: monospace;
+			font-size: 18px;
+			background: black;
 		}
 		li a
 		{
-			float: left;
-			padding: 0px 20px;
-			text-decoration: none;
 			color: white;
-			line-height: 50px;
 		}
-		li a:hover
+		li:hover
 		{
-			background-color: #73757A;
+			background: grey;
+			height: 49px;
+			width: 149px;
+			border-left: 1px dashed white;
+			border-bottom: 1px dashed white;
 		}
-		li a:active
+		li:active
 		{
-			margin-top: 4px;
-			line-height: 46px;
+			height: 42px;
+			width: 142px;
+			border: 4px groove darkgrey;
 		}
-		.home
+		#mainnav li .dropdown
 		{
-			background-color: #0006BD;
+			display: none;
 		}
-		.home:hover
+		#mainnav li:hover .dropdown
 		{
-			background-color: #3081D1;
+			display: block;
+			width: 100px;
+		}
+		#cat:active
+		{
+			background: grey;
+			height: 49px;
+			width: 149px;
+			border-left: 1px dashed white;
+			border-bottom: 1px dashed white;
+			border-top: none;
+			border-right: none;
 		}
 	</style>
 </head>
 <body>
-	<div>
-		<ul type="none">
-			<li><a href="#" class="home">Home</a></li>
-			<li><a href="#">Catogories</a></li>
+	<div id="navbar">
+		<ul type="none" id="mainnav">
+			<li id="home"><a href="#">Home</a></li>
+			<li id="cat"><a href="#">Categories</a>
+				<ul type="none" class="dropdown">
+					<li><a href="#">Electronics</a></li>
+					<li><a href="#">Appliances</a></li>
+					<li><a href="#">Fashion</a></li>
+					<li><a href="#">Health</a></li>
+					<li><a href="#">Babies</a></li>
+				</ul>
+			</li>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Others</a></li>
