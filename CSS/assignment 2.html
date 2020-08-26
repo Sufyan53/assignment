@@ -51,6 +51,7 @@
 			width: 149px;
 			border-left: 1px dashed white;
 			border-bottom: 1px dashed white;
+			cursor: pointer;
 		}
 		li:active
 		{
@@ -67,6 +68,14 @@
 			display: block;
 			width: 100px;
 		}
+		#cat:hover a
+		{
+			cursor: context-menu;
+		}
+		#cat:hover
+		{
+			cursor: context-menu;
+		}
 		#cat:active
 		{
 			background: grey;
@@ -76,6 +85,10 @@
 			border-bottom: 1px dashed white;
 			border-top: none;
 			border-right: none;
+		}
+		#cat:hover .dropdown li a
+		{
+			cursor: pointer;
 		}
 	</style>
 </head>
