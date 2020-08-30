@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Assignment</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+			text-decoration: none;
+			text-align: center;
+			color: white;
+		}
+		h2
+		{
+			font-size: 35px;
+		}
+		h3
+		{
+			font-size: 30px;
+		}
+		p
+		{
+			font-size: 18px;
+		}
+		img
+		{
+			cursor: pointer;
+		}
+		#header, #footer
+		{
+			width: 1260px;
+			height: 650px;
+		}
+		#header
+		{
+			background-image: url(bghead.png);
+			position: center;
+			background-size: cover;
+			margin-bottom: -350px
+		}
+		.game
+		{
+			position: absolute;
+			color: white;
+			font-size: 130px;
+			margin: 50px 0px 0px 50px;
+		}
+		#search
+		{
+			margin: 150px 0px 0px 900px;
+			width: 300px;
+			height: 40px;
+		}
+		#search:focus
+		{
+			transform: scale(1.1);
+			border-radius: 15px;
+			border: 3px solid #847f7f;
+			outline: none;
+		}
+		.searchicon
+		{
+			position: absolute;
+			margin: 148px 0px 0px -50px;
+			width: 50px;
+			z-index: 1;
+		}
+		.searchicon:active
+		{
+			transform: scale(0.9);
+		}
+		#navbar
+		{
+			position: sticky;
+			top: 0px;
+			height: 60px;
+			background-color: black;
+		}
+		#marg
+		{
+			margin-left: 80px;
+		}
+		#navbar ul li
+		{
+			float: left;
+			line-height: 60px;
+			width: 130px;
+			font-size: 30px;
+			text-align: center;
+			border-left: 1px solid white;
+			color: white;
+			background-color: black;
+		}
+		#navbar ul li:hover
+		{
+			transition: .2s;
+			transform: scale(1.2);
+			margin-top: 6px;
+			background: linear-gradient(to top, grey, black);
+		}
+		#navbar ul li:active
+		{
+			transition: .2s;
+			transform: scale(1.1);
+			margin-top: 3px;
+			background: linear-gradient(to bottom, grey, black);
+		}
+		#middle1
+		{
+			width: 1140px;
+			height: 600px;
+			margin-left: 60px;
+			background-color: #3a3a3a;
+			overflow: hidden;
+		}
+		.creed
+		{
+			width: 760px;
+			height: 428px;
+		}
+		.codware
+		{
+			position: absolute;
+			margin: -430px 0px 0px 760px;
+			width: 380px;
+			height: 300px;
+		}
+		.fallguy
+		{
+			position: absolute;
+			margin: -130px 0px 0px 760px;
+			width: 380px;
+			height: 300px;
+		}
+		.codware:hover img, .fallguy:hover img
+		{
+			transition: .2s;
+			transform: scale(1.2);
+		}
+		.creeddata
+		{
+			width: 760px;
+			height: 170px;
+		}
+		#middle2
+		{
+			margin-left: 60px;
+			width: 1140px;
+			height: 60px;
+			overflow: hidden;
+		}
+		.lat, .pop, .fea
+		{
+			
+			width: 380px;
+			line-height: 60px;
+			background-color: green;
+			float: left;
+		}
+		.pop
+		{
+			background-color: #0083ff;
+		}
+		.fea
+		{
+			background-color: black;
+		}
+		#con
+		{
+			margin-left: 60px;
+			height: 1800px;
+			width: 1140px;
+			background-color: #3a3a3a;
+		}
+		#middle3, #middle4, #middle5
+		{
+			width: 380px;
+			height: 1800px;
+			float: left;
+		}
+		.mid3, .mid3a
+		{
+			width: 380px;
+			height: 300px;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		#middle4 .mid3 img, #middle5 .mid5a img
+		{
+			margin-left: -20%;
+		}
+		.mid3:hover, .mid5a:hover
+		{
+			transition: .2s;
+			transform: scale(1.2);
+			overflow: visible;
+		}
+		.mid5a, .mid5b
+		{
+			width: 190px;
+			height: 150px;
+			float: left;
+			overflow: hidden;
+		}
+		#footer
+		{
+			position: relative;
+			z-index: -1;
+			background-image: url(bgfoot.png);
+			margin-top: -200px;
+		}
+		table
+		{
+			position: absolute;
+			margin: 280px 0px 0px 150px;
+		}
+		th, td
+		{
+			height: 29px;
+			width: 180px;
+			text-align: left;
+		}
+		th
+		{
+			font-size: 30px;
+		}
+		td
+		{
+			font-size: 17px;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h2 class="game">Games</h2>
+			<input type="text" id="search">
+			<a href="#"><img class="searchicon" src="search.png"></a>
+		<div id="navbar">
+			<ul type="none" id="marg">
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>Games</li></a>
+				<a href="#"><li>Events</li></a>
+				<a href="#"><li>News</li></a>
+				<a href="#"><li>Contacts</li></a>
+			</ul>
+		</div>
+	</div>
+	<div id="middle1">
+		<div class="creed">
+			<img src="creed.jpg" width="100%">
+		</div>
+		<div class="codware">
+			<img src="cod warefare.jpg" width="100%">
+			<h2>Call Of Duty Modern Warefare</h2>
+		</div>
+		<div class="fallguy">
+			<img src="fall guy.jpg" width="100%">
+			<h2>Fall Guy</h2>
+		</div>
+		<div class="creeddata">
+			<h2>Assassin's Creed</h2>
+			<p>"Assassin's Creed will stay with you long after you 
+			finish it. Here is one of the most unique gameworlds ever
+			created: beautiful, memorable, and alive. Every crack and
+			crevasse is filled with gorgeous, subtle details, from
+			astounding visual flourishes to overheard cries for
+			help. But it's more than just a world--it's a fun and
+			exciting action game with a ton of stuff to do and
+			places to explore, rounded out with silky-smooth
+			controls and a complex story that will slowly grab
+			you the more you play. Make no mistake: Assassin's
+			Creed is one of the best efforts of the year and a
+			must-own game." </p>
+		</div>
+	</div>
+	<div id="middle2">
+		<ul type="none">
+			<li class="lat"><div><h3>Latest</h3></div></li>
+			<li class="pop"><div><h3>Popular</h3></div></li>
+			<li class="fea"><div><h3>Featured</h3></div></li>
+		</ul>
+	</div>
+	<div id="con">
+	<div id="middle3">
+		<div class="mid3">
+			<img src="latest/bf 5.jpg" width="100%">
+			<h2>Battlefield 5</h2>
+			<p></p>
+		</div>
+		<div class="mid3">
+			<img src="latest/ff 7.jpg" width="100%">
+			<h2>Final Fantasy</h2>
+			<p></p>
+		</div>
+		<div class="mid3">
+			<img src="latest/kof.jpg" width="100%">
+			<h2>King of Fighters</h2>
+			<p></p>
+		</div>
+		<div class="mid3">
+			<img src="latest/sf 3.jpg" width="100%">
+			<h2>Shadows Fighter</h2>
+			<p></p>
+		</div>
+		<div class="mid3">
+			<img src="latest/wl 3.jpg" width="100%">
+			<h2>Waste Land</h2>
+			<p></p>
+		</div>
+		<div class="mid3">
+			<img src="latest/st 5.jpg" width="100%">
+			<h2>Street Fighter</h2>
+			<p></p>
+		</div>
+	</div>
+	<div id="middle4">
+		<div class="mid3">
+			<img src="popular/minecraft.jpg" height="100%">
+		</div>
+		<div class="mid3a">
+			<h2>Minecraft</h2>
+			<p>Explore infinite worlds and build everything from the simplest of 
+			homes to the grandest of castles. Play in creative mode with unlimited
+			resources or mine deep into the world in survival mode, crafting 
+			weapons and armor to fend off dangerous mobs. Create, explore and 
+			survive alone or with friends on mobile devices or Windows 10</p>
+		</div>
+		<div class="mid3">
+			<img src="popular/pacify.jfif" height="100%">
+		</div>
+		<div class="mid3a">
+			<h2>Pacify</h2>
+			<p>In Pacify, you will be running for your life around the narrow corridors of a dark, old house. There is a little girl that switched
+			between good and evil roaming around. Different circumstances can
+			cause her to change. Once the evil takes over, it will chase you and
+			your friends all over the house. You must find a way to Pacify the
+			evil and escape the house. As the game progresses, the evil gets 
+			smarter and faster.
+			Play alone in single player mode, or play with up to 3 more friends in
+			multiplayer.</p>
+		</div>
+		<div class="mid3">
+			<img src="popular/pubg.png" height="100%">
+		</div>
+		<div class="mid3a">
+			<h2>Player Unknown's Battleground</h2>
+			<p>Battlegrounds is a player versus player shooter game in which up to 
+			one hundred players fight in a battle royale, a type of large-scale
+			last man standing deathmatch where players fight to remain the last 
+			alive. Players can choose to enter the match solo, duo, or with a
+			small 
+			team of up to four people.</p>
+		</div>
+	</div>
+	<div id="middle5">
+		<div class="mid5a">
+			<img src="featured/gw.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Gods of War</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/gta5.jfif" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Grand Theft Auto V</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/nfs.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Need for Speed</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/igi2.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Project IGI 2</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/bc.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Battle Con Online</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/sonic.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Sonic the Hedgehog</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/wm.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>War and Magic</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/cp.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Cyber Punk</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/rdr2.jpg" height="100%">
+		</div><div class="mid5b">
+			<h2>Red Dead Redemption 2</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/dutm.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Deliver us the Moon</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/c.jfif" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Control</h2>
+		</div>
+		<div class="mid5a">
+			<img src="featured/nfsmw.jpg" height="100%">
+		</div>
+		<div class="mid5b">
+			<h2>Need for Speed Most Wanted</h2>
+		</div>
+	</div>
+	</div>
+	<div id="footer">
+		<table>
+			<tr>
+				<th>Games</th>
+				<th>Categories</th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th>Plateform</th>
+			</tr>
+			<tr>
+				<td>God of War</td>
+				<td>Platform games</td>
+				<td>Shooter games</td>
+				<td>Fighting games</td>
+				<td>Beat 'em up games</td>
+				<td>Consoles</td>
+			</tr>
+			<tr>
+				<td>DEVICE 6</td>
+				<td>Stealth game</td>
+				<td>Survival games</td>
+				<td>Battle Royale games</td>
+				<td>Rhythm games</td>
+				<td>PC</td>
+			</tr>
+			<tr>
+				<td>RESIDENT EVIL 7</td>
+				<td>Action-adventure</td>
+				<td>Survival horror</td>
+				<td>Metroidvania</td>
+				<td>Adventure</td>
+				<td>Mobile</td>
+			</tr>
+			<tr>
+				<td>CONTROL</td>
+				<td>Text adventures</td>
+				<td>Graphic adventures</td>
+				<td>Visual novels</td>
+				<td>Interactive movie</td>
+				<td>Virtual Reality</td>
+			</tr>
+			<tr>
+				<td>FLAPPY BIRD</td>
+				<td>Real-time</td>
+				<td>Role-playing</td>
+				<td>Action RPG</td>
+				<td>Roguelikes</td>
+				<td>Television</td>
+			</tr>
+			<tr>
+				<td>OXENFREE</td>
+				<td>Sandbox RPG</td>
+				<td>JRPG</td>
+				<td>Monster Collection</td>
+				<td>First-person party-based RPG</td>
+				<td>Arcade.</td>
+			</tr>
+			<tr>
+				<td>Call of Duty</td>
+				<td>Vehicle simulation</td>
+				<td>Construction and management</td>
+				<td>Life simulation</td>
+				<td>4X game</td>
+				<td>Play Station</td>
+			</tr>
+			<tr>
+				<td>Final Fantasy IX</td>
+				<td>Strategy</td>
+				<td>Artillery game</td>
+				<td>Auto battler (Auto chess)</td>
+				<td>Multiplayer online battle arena (MOBA)</td>
+				<td>Streaming</td>
+			</tr>
+			<tr>
+				<td>BioShock Infinite</td>
+				<td>Real-time strategy</td>
+				<td>Real-time tactics</td>
+				<td>Tower defense</td>
+				<td>Turn-based strategy</td>
+				<td>XBOX</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
