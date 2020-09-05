@@ -22,12 +22,13 @@ h3
 {
 	font-size: 29px;
 	text-align: left;
-	padding: 7px; 
+	padding: 7px;
 }
 h4
 {
 	font-size: 26px;
-	padding: 5px; 
+	padding: 5px;
+	text-align: left;
 }
 p
 {
@@ -233,6 +234,11 @@ img
 	overflow: hidden;
 	margin-top: 5px;
 	margin-left: 5px;
+}
+.mid5b p
+{
+	text-align: left;
+	font-size: 16px;
 }
 #l2 h2
 {
