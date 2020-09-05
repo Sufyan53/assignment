@@ -7,6 +7,11 @@
 	color: white;
 	font-family: 'Gayathri', sans-serif;
 }
+*::selection
+{
+	color: black;
+	background-color: white;
+}
 h2
 {
 	font-size: 32px;
