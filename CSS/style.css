@@ -24,6 +24,11 @@ h3
 	text-align: left;
 	padding: 7px; 
 }
+h4
+{
+	font-size: 26px;
+	padding: 5px; 
+}
 p
 {
 	font-size: 18px;
@@ -200,10 +205,11 @@ img
 }
 .mid3, .mid3a
 {
-	width: 380px;
+	width: 375px;
 	height: 300px;
 	overflow: hidden;
 	cursor: pointer;
+	margin-left: 5px;
 }
 #middle4 .mid3 img, #middle5 .mid5a img
 {
@@ -221,10 +227,12 @@ img
 }
 .mid5a, .mid5b
 {
-	width: 190px;
-	height: 150px;
+	width: 185px;
+	height: 145px;
 	float: left;
 	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 #l2 h2
 {
