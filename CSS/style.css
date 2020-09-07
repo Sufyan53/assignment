@@ -29,6 +29,7 @@ h4
 	font-size: 26px;
 	padding: 5px;
 	text-align: left;
+	font-weight: bold;
 }
 p
 {
@@ -135,22 +136,31 @@ img
 	margin-left: 60px;
 	background-color: #3a3a3a;
 }
-.creed
+.outer
 {
 	width: 760px;
 	height: 428px;
+	overflow: hidden;
+}
+.inner
+{
+	width: 2280px;
+	height: 428px;
+	animation: data 20s infinite;
 }
 .codware
 {
 	position: absolute;
 	margin: -430px 0px 0px 760px;
+	padding: 5px;
 	width: 380px;
 	height: 300px;
 }
 .fallguy
 {
 	position: absolute;
-	margin: -130px 0px 0px 760px;
+	margin: -90px 0px 0px 760px;
+	padding: 5px;
 	width: 380px;
 	height: 300px;
 }
@@ -162,10 +172,94 @@ img
 	transform: scale(1.2);
 	overflow: visible;
 }
-.creeddata
+.outerdata
+{
+	position: absolute;
+	width: 760px;
+	height: 220px;
+	overflow: hidden;
+}
+.inner2
+{
+	height: 220px;
+	width: 2280px;
+	animation: data 20s infinite;
+}
+@keyframes data
+{
+	0%
+	{
+		transform: scale(.8);
+		margin-left: -150px;
+	}
+	5%
+	{
+		margin-left: 0px;
+		transform: scale(1);
+	}
+	20%
+	{
+		margin-left: 0px;
+		transform: scale(1);
+	}
+	22%
+	{
+		margin-left: -40px;
+		transform: scale(.95);
+	}
+	34%
+	{
+		margin-left: -760px;
+		transform: scale(.95);
+	}
+	36%
+	{
+		transform: scale(1);
+	}
+	52%
+	{
+		transform: scale(1);
+	}
+	54%
+	{
+		transform: scale(.95);
+	}
+	56%
+	{
+		margin-left: -760px;
+		transform: scale(.95);
+	}
+	67%
+	{
+		margin-left: -1480px;
+		transform: scale(.95);
+	}
+	69%
+	{
+		margin-left: -1520px;
+		transform: scale(1);
+	}
+	88%
+	{
+		margin-left: -1520px;
+		transform: scale(1);
+	}
+	90%
+	{
+		margin-left: -1370px;
+		transform: scale(.8);
+	}
+	100%
+	{
+		margin-left: -150px;
+		transform: scale(.8);
+	}
+}
+.innerdata
 {
 	width: 760px;
-	height: 170px;
+	height: 220px;
+	float: left;
 }
 #middle2
 {
