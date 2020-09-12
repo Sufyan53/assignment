@@ -72,29 +72,36 @@ img
 }
 #search:focus
 {
-	margin: 149px 0px 0px 858px;
+	margin: 150px 0px 0px 860px;
 	transition: .5s;
 	width: 300px;
-	border: 3px solid #847f7f;
+	border: 2px inset #847f7f;
 	outline: none;
 	background-color: #c1fffa;
 }
-.fa-search
+.sico
 {
 	position: absolute;
-	margin: 158px 0px 0px -30px;
+	margin: 155px 0px 0px -34px;
 	font-size: 23px;
 	color: black;
 }
-.fa-search:hover
+.sico:hover
 {
-	font-size: 25px;
-	margin: 157px 0px 0px -31px;
+	width: 32px;
+	height: 32px;
+	margin: 154px 0px 0px -35px;
 }
-.fa-search:active
+.sico:active
 {
-	font-size: 21px;
-	margin: 159px 0px 0px -29px;	
+	width: 28px;
+	height: 28px;
+	margin: 156px 0px 0px -33px;	
+}
+.hico
+{
+	position: relative;
+	margin: -5px 0px -8px 0px;
 }
 #navbar
 {
